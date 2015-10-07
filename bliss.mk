@@ -6,14 +6,13 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/bliss/config/nfc_enhanced.mk)
 
-PRODUCT_RELEASE_NAME := MOTO X
+PRODUCT_DEVICE := ghost
 PRODUCT_NAME := bliss_ghost
+PRODUCT_BRAND := motorola
+PRODUCT_MODEL := ghost
+PRODUCT_MANUFACTURER := motorola
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_MODEL=ghost \
-    PRODUCT_NAME=ghost \
-    PRODUCT_DEVICE=ghost \
-    TARGET_DEVICE=ghost \
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
